@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Input: Array limit and values
+const limit = parseInt(prompt("Enter the array limit:"));
+let arr = [];
+let result = [];
+
+for (let i = 0; i < limit; i++) {
+    let value = parseInt(prompt(`Enter value ${i + 1} of the array:`));
+    arr.push(value);
+}
+
+// Multiply adjacent values and store in result array
+for (let i = 0; i < arr.length - 1; i++) {
+    result.push(arr[i] * arr[i + 1]);
+}
+
+// Output the result
+console.log("Output:");
+console.log(result.join("\t"));
+
+    </script>
+</body>
+</html>
