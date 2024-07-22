@@ -1,6 +1,7 @@
 const arr = [1,2,3,1,2,3,6,7,8,4,5,9]
 let i,j,count=0;
 let isDuplicate = []
+let removed =[]
 
 for(i=0;i<arr.length;i++){
     for(j=i+1;j<arr.length;j++){

@@ -1,5 +1,6 @@
 const array = [1, 2, 3, 1, 2, 3, 4, 5, 6, 7, 8, 90, 34, 2, 1, 32, 54, 67];
 let unique = [];
+let duplicate = []
 let i, j, count;
 
 for (i = 0; i < array.length; i++) {
@@ -15,3 +16,4 @@ for (i = 0; i < array.length; i++) {
 }
 
 console.log('Unique elements in the array are:', unique);
+console.log(duplicate);
