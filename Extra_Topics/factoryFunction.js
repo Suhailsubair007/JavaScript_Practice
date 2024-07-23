@@ -10,6 +10,7 @@ function CreatePerson (name,age){
 
 const person1 = CreatePerson('suhail',22);
 const person2 = CreatePerson('Amal',25);
-
+const person3 = CreatePerson('Adith',22);
 person1.greet();
 person2.greet();    
+person3.greet();
