@@ -7,24 +7,22 @@
 </head>
 <body>
     <script>
-        // Input: Array limit and values
-const limit = parseInt(prompt("Enter the array limit:"));
-let arr = [];
-let result = [];
 
-for (let i = 0; i < limit; i++) {
-    let value = parseInt(prompt(`Enter value ${i + 1} of the array:`));
-    arr.push(value);
+
+
+
+let limit,sum;
+limit = parseInt(prompt("Please enter a limit : "));
+sum = 0;
+for(i=1;i<=limit;i++){
+    if (i%2!=0) {
+       
+        sum=sum+i;
+   
+    }
 }
+console.log("Sum of odd numbers from 1 to ",limit,"is",sum);
 
-// Multiply adjacent values and store in result array
-for (let i = 0; i < arr.length - 1; i++) {
-    result.push(arr[i] * arr[i + 1]);
-}
-
-// Output the result
-console.log("Output:");
-console.log(result.join("\t"));
 
     </script>
 </body>

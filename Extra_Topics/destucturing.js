@@ -30,11 +30,15 @@
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-function sumAndMultiply (a,b) {
-    return [a+b , a*b, a/b]
-}
+// function sumAndMultiply (a,b) {
+//     return [a+b , a*b, a/b]
+// }
 
-let [sum,multiply,division] = sumAndMultiply(2,3);
-console.log(sum);
-console.log(multiply);
-console.log(Math.round(division));
+// let [sum,multiply,division] = sumAndMultiply(2,3);
+// console.log(sum);
+// console.log(multiply);
+// console.log(Math.round(division));
+
+///////////////////////////////////////////////////////////////////////////////
+
+
