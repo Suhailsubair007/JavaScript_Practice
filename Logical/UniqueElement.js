@@ -15,5 +15,5 @@ for (i = 0; i < array.length; i++) {
     }
 }
 
+
 console.log('Unique elements in the array are:', unique);
-console.log(duplicate);
