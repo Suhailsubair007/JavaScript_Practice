@@ -30,12 +30,12 @@ const person =
 // });
 // console.log(found);
 
-// let found = person.find((item)=>{
-//     return item.age < 25;
-// });
-// console.log(found);
-
 let found = person.find((item)=>{
-    return item.age <25;
+    return item.age < 25;
 });
 console.log(found);
+
+// let found = person.find((item)=>{
+//     return item.age <25;
+// });
+// console.log(found);

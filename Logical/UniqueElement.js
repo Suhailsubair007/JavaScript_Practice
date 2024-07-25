@@ -1,6 +1,6 @@
 const array = [1, 2, 3, 1, 2, 3, 4, 5, 6, 7, 8, 90, 34, 2, 1, 32, 54, 67];
 let unique = [];
-let duplicate = []
+// let duplicate = []
 let i, j, count;
 
 for (i = 0; i < array.length; i++) {

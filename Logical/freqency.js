@@ -12,3 +12,4 @@ for(let i=0; i<orginalArry.length; i++)
     }
 }
 console.log(freqency);
+
