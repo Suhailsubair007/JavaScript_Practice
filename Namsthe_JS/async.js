@@ -35,21 +35,21 @@ const p = new Promise((resolve,reject)=>{
 
 // without async await
 
-function getValue(){
-    p.then((data)=> console.log(data));
-    console.log("Hi suhail ");
-}
-getValue();
-
-
-//With async await
-// async function getValue(){
-//     const newData = await p;
-//     console.log(newData);
-    
+// function getValue(){
+//     p.then((data)=> console.log(data));
+//     console.log("Hi suhail ");
 // }
 // getValue();
-// console.log("Hi suhail your promise is still in progress wait a minuit..");
+
+
+
+async function getValue(){
+    const newData = await p;
+    console.log(newData);
+    
+}
+getValue();
+console.log("Hi suhail your promise is still in progress wait a minuit..");
 
 
 // function getData (){

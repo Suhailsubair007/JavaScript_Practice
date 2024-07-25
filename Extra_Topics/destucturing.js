@@ -1,7 +1,7 @@
 // const alpabet = ['A','B','C','D','E','F','G'];
 // const number = [1,2,3,4,5,6,7,8];
 
-// let a = alpabet[0];
+// // let a = alpabet[0];
 // console.log(a);
 // let b = number[0];
 // console.log(b);
@@ -30,14 +30,14 @@
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-// function sumAndMultiply (a,b) {
-//     return [a+b , a*b, a/b]
-// }
+function sumAndMultiply (a,b) {
+    return [a+b , a*b, a/b]
+}
 
-// let [sum,multiply,division] = sumAndMultiply(2,3);
-// console.log(sum);
-// console.log(multiply);
-// console.log(Math.round(division));
+let [sum,multiply,division] = sumAndMultiply(2,3);
+console.log(sum);
+console.log(multiply);
+console.log(Math.round(division));
 
 ///////////////////////////////////////////////////////////////////////////////
 
