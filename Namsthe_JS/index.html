@@ -6,13 +6,71 @@
     <title>Document</title>
 </head>
 <body>
+    <script>
+    const p = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        if(true){
+        resolve("Success");
+    }else
+    {
+        reject("fail");
+    }
+    },3000);
+});
 
-<button id="tap">Click me</button>
 
 
+// const handlePromise = async function(){
+//     try{
+//         const message = await p;
+//         console.log(message);
+//     } catch(err){
+//         console.log(err);
+//     }
+// }
+
+p.then((message)=>{
+    console.log(message);
+}).catch((err)=>{
+    console.log(err);
+}).finally(()=>{
+    console.log("HJIJH")
+});
+
+// handlePromise();
 
 
+// const p = new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         if(true)
+//         {
+//             resolve("jai jawaaann");
+//         }
+//         else
+//         {
+//             reject("oombii");
+//         }
+//     },4000);
+// });
+
+
+// p.then((mes)=>{
+//     console.log(mes);
+// }).catch((err)=>{
+//     console.log(err);
+// })
+
+// const printPromise = async function(){
+//     try{
+//         const value = await p;
+//         console.log(value);
+//     }catch(err){
+//         console.log(err)
+//     }
     
-    <script src="listner.js"></script>
+// }
+
+// printPromise();
+    </script>
 </body>
 </html>

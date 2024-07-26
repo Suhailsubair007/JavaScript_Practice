@@ -19,10 +19,10 @@ const person =
 
 ];
 
-// let found = person.find((item)=>{
-//     return item.name === 'naseeb';
-// });
-// console.log(found);
+let found = person.find((item)=>{
+    return item.name === 'naseeb';
+});
+console.log(found);
 
 
 // let found = person.find((item)=>{
@@ -30,10 +30,10 @@ const person =
 // });
 // console.log(found);
 
-let found = person.find((item)=>{
-    return item.age < 25;
-});
-console.log(found);
+// let found = person.find((item)=>{
+//     return item.age < 25;
+// });
+// console.log(found);
 
 // let found = person.find((item)=>{
 //     return item.age <25;

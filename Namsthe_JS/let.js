@@ -7,14 +7,24 @@
 
 
 
-function func() {
-    let a = 'Geeks';
+// function func() {
+//     let a = 'Geeks';
     
-    if (true) {
-        let a = 'GeeksforGeeks';  // New value assigned
-        console.log(a); 
-    }
+//     if (true) {
+//         let a = 'GeeksforGeeks';  // New value assigned
+//         console.log(a); 
+//     }
     
-    console.log(a); 
-}
-func();
+//     console.log(a); 
+// }
+// func();
+
+
+
+
+// let a =10;
+// console.log(a);
+// {
+//     let a = 20;
+//     console.log(a);
+// }

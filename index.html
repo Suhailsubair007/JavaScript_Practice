@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Delegation Example</title>
+  <style>
+    .child-item {
+      cursor: pointer;
+      padding: 10px;
+      border: 1px solid #ccc;
+      margin: 5px 0;
+    }
+    .child-item:hover {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Event Delegation Example</h1>
+  <button id="add-item">Add Item</button>
+  <ul id="dynamic-list">
+    <li class="child-item">Item 1</li>
+    <li class="child-item">Item 2</li>
+    <li class="child-item">Item 3</li>
+    <li class="child-item">Item 4</li>
+  </ul>
+
+  <script>
+    // Adding event listener to the "Add Item" button to dynamically add new list items
+    document.getElementById('add-item').addEventListener('click', function() {
+      const newItem = document.createElement('li');
+      newItem.className = 'child-item';
+      newItem.textContent = 'New Item';
+      document.getElementById('dynamic-list').appendChild(newItem);
+    });
+
+    // Adding event listener to the parent UL element to handle clicks on child LI elements
+    document.getElementById('dynamic-list').addEventListener('click', function(event) {
+      if (event.target && event.target.matches('li.child-item')) {
+        console.log('List item clicked:', event.target.textContent);
+      }
+    });
+  </script>
+</body>
+</html>
